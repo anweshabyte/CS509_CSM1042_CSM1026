@@ -1,12 +1,8 @@
 # CS509 Buddy Assignment 3 — Maxflow-Mincut
 
 ## Assignment Mode
-**Double / Buddy**
 
 This project implements the **Maxflow-Mincut** buddy task from CS509 Assignment 3 using C++ and Dinic's algorithm.
-
-The assignment requires Maxflow-Mincut as a buddy task, with CSR conversion before the algorithm call. The maximum-flow value must equal the minimum-cut capacity.
-
 
 ## Language and Environment
 
@@ -19,7 +15,7 @@ The assignment requires Maxflow-Mincut as a buddy task, with CSR conversion befo
 g++ -std=c++17 -O2 -o maxflow_driver assignment_03/driver/maxflow_driver.cpp
 ```
 
-The supplied driver contains the CSR helper and Dinic implementation. If your earlier assignment already has the official shared CSR conversion helper, replace the local helper with that exact helper as required by your course workflow.
+The supplied driver contains the CSR helper and Dinic implementation.
 
 ## Objective
 
@@ -35,11 +31,6 @@ Given a directed graph with positive integer edge capacities, compute:
 The expected invariant is:
 
 **Maximum flow = Minimum cut capacity**
-
-
-## Timing
-
-The timer starts immediately before the maxflow/mincut algorithm call and stops immediately after the algorithm finishes.
 
 ## Directory Structure
 
@@ -120,12 +111,7 @@ CSR storage uses:
 
 **O(V + E)**
 
-Additional residual-network storage is proportional to the directed input edges and their residual reverse edges.
-
-
 ## Result Table
-
-Run the five test files on the target machine and record the observed values/times below. The actual timing values must come from the machine used for submission.
 
 | Mode | Test File | Input Type | Input Size | Expected Flow | Actual Flow | Cut Capacity | Algorithm Time | Status |
 |---|---|---|---|---:|---:|---:|---:|---|
