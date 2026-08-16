@@ -1,0 +1,14 @@
+# Build files
+maxflow_driver
+maxflow_driver.exe
+*.o
+*.out
+
+# Error/log files
+build_error.txt
+
+# VS Code
+.vscode/
+
+# CMake/build directories
+build/
