@@ -67,10 +67,12 @@ FastMapResult fastmap(
 
     for (int dim = 0; dim < k; dim++) {
 
-        auto [pivot_a, pivot_b] = choose_pivots(
-            dist, result.coordinates, N, dim
-        );
-        result.pivots[dim] = {pivot_a, pivot_b};
+    pair<int,int> piv = choose_pivots(
+    dist, result.coordinates, N, dim
+);
+int pivot_a = piv.first;
+int pivot_b = piv.second;
+result.pivots[dim] = make_pair(pivot_a, pivot_b);
 
         double d_ab = deflated_dist(
             dist, result.coordinates, pivot_a, pivot_b, dim
