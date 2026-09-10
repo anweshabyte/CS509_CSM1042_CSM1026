@@ -1,0 +1,12 @@
+Algorithm: Maxflow-Mincut
+Source: 0
+Sink: 9
+Maximum flow: 3
+Minimum cut capacity: 3
+Source side: 0 1 2 3 4 5 6 7 8
+Sink side: 9
+Cut edges:
+8 9 3
+Execution time: 0.005318 ms
+
+Driver wall-clock check (not submission timing): 1.850 ms
